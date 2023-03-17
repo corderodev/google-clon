@@ -35,6 +35,8 @@ a:hover {
 header {
 	width: 100%;
 	height: 6rem;
+	position: absolute;
+	top: 0;
 }
 .navbar {
 	height: 100%;
@@ -69,12 +71,17 @@ header {
 
 
 main {
-  margin: 10rem auto 0;
   padding: 0 2rem;
   text-align: center;
+	width: 100%;
+	height: 100vh;
+	min-height: 600px;
+	display: grid;
+	align-content: center;
 }
 .main-logo {
 	max-width: 53rem;
+	width: 100%;
 	margin: 0 auto 3.5rem;
 }
 .main-logo img {
@@ -83,10 +90,12 @@ main {
 }
 .main-input {
 	max-width: 53rem;
+	width: 100%;
 	margin: 0 auto 3.5rem;
 }
 .main-input-container {
 	max-width: 52.5rem;
+	width: 100%;
 	padding: 0 1rem;
 	border-radius: 100px;
 	border: 1px solid var(--color-secondary-variant);
@@ -119,7 +128,6 @@ main {
 }
 .main-input-container:hover {
 	border: 1px solid var(--color-primary);
-	box-shadow: 0 1px 6px 0 var(--black);
 }
 .main-input-container .micro-icon {
 	width: 20px;
@@ -133,6 +141,7 @@ main {
 
 .main-buttons {
 	max-width: 53rem;
+	width: 100%;
 	margin: 0 auto;
 }
 .main-buttons div{
@@ -188,9 +197,6 @@ footer ul li a {
 }
 
 @media (min-width: 768px) {
-	main {
-		margin: 15rem auto 0;
-	}
 	footer ul {
 		flex-direction: row;
 	}
